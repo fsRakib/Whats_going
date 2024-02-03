@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:whats_going/feature/welcome/pages/welcome_page.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -9,14 +11,11 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return  MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Whats going',
-     
-      home: Scaffold(body: Center(
-        child: Text('Demo Page'),
-      ),
-      ),
+      theme: ThemeData.dark(),
+      home: const WelcomePage(),
     );
   }
 }
