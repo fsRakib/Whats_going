@@ -1,4 +1,4 @@
-# whats_going
+# Whats going chat app
 
 A new Flutter project.
 
