@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:whats_going/common/theme/dark_theme.dart';
+import 'package:whats_going/common/theme/light_theme.dart';
 import 'package:whats_going/feature/welcome/pages/welcome_page.dart';
 
 
@@ -14,7 +16,9 @@ class MyApp extends StatelessWidget {
     return  MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Whats going',
-      theme: ThemeData.dark(),
+      theme: lightTheme(),
+      darkTheme: darkTheme(),
+      themeMode: ThemeMode.system,
       home: const WelcomePage(),
     );
   }
