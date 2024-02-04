@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:whats_going/common/theme/dark_theme.dart';
 import 'package:whats_going/common/theme/light_theme.dart';
-import 'package:whats_going/feature/welcome/pages/welcome_page.dart';
-
+import 'package:whats_going/feature/auth/pages/login_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: lightTheme(),
       darkTheme: darkTheme(),
       themeMode: ThemeMode.system,
-      home: const WelcomePage(),
+      home: const LoginPage(),
     );
   }
 }
